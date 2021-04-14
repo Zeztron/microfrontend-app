@@ -1,7 +1,6 @@
 import React from 'react';
 import MarketingApp from './components/MarketingApp';
 
-// Hi
 const App: React.FC = () => {
   return <MarketingApp />;
 };
