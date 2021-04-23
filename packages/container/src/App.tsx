@@ -1,9 +1,19 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './components/MarketingApp';
+import Header from './components/Header';
 
-// Hi
 const App: React.FC = () => {
-  return <MarketingApp />;
+  const onSignOut = () => {};
+
+  return (
+    <BrowserRouter>
+      <div>
+        <Header signedIn={false} onSignOut={onSignOut} />
+        <MarketingApp />
+      </div>
+    </BrowserRouter>
+  );
 };
 
 export default App;
